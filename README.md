@@ -15,8 +15,6 @@ environment allows us to demonstrate the effectiveness of our IDS in a realistic
 evidence of its capability to accurately identify and flag intrusions in real-time. The results showcase the potential
 of this integrated approach in enhancing the security posture of SDN deployments.
 
-## Features
-
 - **Advanced Anomaly Detection**: Employs a state-of-the-art LSTM deep learning model for real-time identification of
   abnormal network activities.
 
@@ -32,6 +30,12 @@ of this integrated approach in enhancing the security posture of SDN deployments
 - **Scalable Architecture**: Designed to handle increasing network complexities and traffic volumes, making it suitable
   for both small and large-scale SDN deployments.
 
+## Project files
+
+- `gui/`: GUI components built with Python Tkinter
+- `mininet/`: Mininet scripts and custom topologies for POX controller integration
+- `model/`: Scripts and notebooks for LSTM model development (feature selection, preprocessing, and training)
+
 ## Installation
 
 #### Prerequisites
@@ -46,10 +50,6 @@ of this integrated approach in enhancing the security posture of SDN deployments
   Scikit-learn
 ```
 
-
-    
-## Usage
-
 1. Train the LSTM Model:
    - Use the NSL-KDD dataset to train the LSTM model.
    - Navigate to the `model/` directory and run the `feature_selection.ipynb` and `kdd.ipynb` notebooks for data preprocessing and model training.
@@ -60,9 +60,3 @@ of this integrated approach in enhancing the security posture of SDN deployments
 3. Monitor Network Traffic:
    - The IDS will automatically analyze network traffic in real-time.
    - Check the POX controller output for logs of any detected anomalies.
-
-## Project Structure
-
-- `gui/`: GUI components built with Python Tkinter
-- `mininet/`: Mininet scripts and custom topologies for POX controller integration
-- `model/`: Scripts and notebooks for LSTM model development (feature selection, preprocessing, and training)
